@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pasokone</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <%= link_to Staff.model_name.human, staffs_path %>
+    <%= link_to Person.model_name.human, people_path %>
+    <%= link_to Company.model_name.human, companies_path %>
+    <%= link_to Interview.model_name.human, interviews_path %>
+    <%= yield %>
+  </body>
+</html>
