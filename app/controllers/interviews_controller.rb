@@ -1,5 +1,7 @@
 class InterviewsController < ApplicationController
   before_action :set_interview, only: [:show, :edit, :update, :destroy]
+  before_action :set_staffs, only: [:new, :edit, :create, :update]
+  before_action :set_people, only: [:new, :edit, :create, :update]
 
   # GET /interviews
   # GET /interviews.json
@@ -65,6 +67,14 @@ class InterviewsController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_interview
       @interview = Interview.find(params[:id])
+    end
+
+    def set_staffs
+      @staffs = Staff.all
+    end
+
+    def set_people
+      @people = Person.all
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
