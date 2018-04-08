@@ -13,6 +13,7 @@
     <%= link_to Person.model_name.human, people_path %>
     <%= link_to Company.model_name.human, companies_path %>
     <%= link_to Interview.model_name.human, interviews_path %>
+    <%= link_to 'Sign out', destroy_staff_session_path, method: :delete %>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
     <%= yield %>

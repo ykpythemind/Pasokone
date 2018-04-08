@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :staffs
   root to: 'interviews#index'
   resources :interviews
   resources :companies
