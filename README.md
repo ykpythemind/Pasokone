@@ -6,12 +6,17 @@ application up and running.
 Things you may want to cover:
 
 * Ruby version
+2.4.3
 
 * System dependencies
 
 * Configuration
 
 * Database creation
+
+```
+$ bin/rails db:setup
+```
 
 * Database initialization
 
