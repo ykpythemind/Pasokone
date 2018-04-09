@@ -9,6 +9,8 @@ Things you may want to cover:
 2.4.3
 
 * System dependencies
+  * Node.js
+  * yarn (npm package)
 
 * Configuration
 
@@ -19,6 +21,13 @@ $ bin/rails db:setup
 ```
 
 * Database initialization
+
+* Development
+
+```
+$ bin/webpack-dev-server
+$ bin/rails s
+```
 
 * How to run the test suite
 
